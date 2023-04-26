@@ -1,1 +1,38 @@
 /* Стилизация аккордеона */
+
+.accordion {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    flex-flow: column;
+    gap: .5em;
+}
+
+.accordion[open] {
+    padding-bottom: 2em;
+}
+
+.accordion__section {
+    padding: 1.5em 2em;
+    box-sizing: border-box;
+    border: 1px solid var(--grey-3);
+    border-radius: 8px;
+}
+
+.accordion__summary {
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* не работает в Chrome, свойство 'display: inline-block;' убирает стрелку по умолчанию */
+/*.accordion__summary::-webkit-details-marker {*/
+/*    display: none;*/
+/*}*/
+
+.accordion__details {
+    margin: 0;
+    padding-top: 1em;
+}
