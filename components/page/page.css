@@ -1,3 +1,51 @@
+html, body {
+    height: 100%;
+}
+
 .page {
     color: var(--black);
+    background: var(--grey-1);
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    padding: 0 165px;
+}
+
+.page__header {
+    height: 118px;
+}
+
+.page__main {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+.page__footer {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--grey-3);
+    text-align: center;
+    padding: 56px 0
+}
+
+.page__menu {
+    width: 285px;
+}
+
+.page__component {
+    background: var(--white);
+}
+
+.page__menu-title {
+    margin: 0px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
 }
