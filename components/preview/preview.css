@@ -22,24 +22,3 @@
     display: grid;
     grid-template-columns: auto 1fr;
 }
-
-.preview__title {
-    margin: 0px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 26px;
-}
-
-.preview__menu {
-    width: 285px;
-}
-
-.preview__component {
-    background: var(--white);
-}
-
-.preview__component_height {
-    height: 100%;
-}
