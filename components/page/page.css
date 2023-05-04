@@ -4,6 +4,12 @@ html, body {
 
 .page {
     color: var(--black);
+    display: flex;
+    flex-direction: column;
+}
+
+.page__main {
+    flex-grow: 1;
     background: var(--grey-1);
     height: 100%;
     display: grid;
