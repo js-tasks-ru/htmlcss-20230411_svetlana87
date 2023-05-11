@@ -5,6 +5,10 @@
     border-bottom: 1px solid var(--grey-2);
 }
 
+.preview_detail {
+    border: 0;
+}
+
 .preview__cards {
     display: flex;
     flex-direction: row;
@@ -13,3 +17,7 @@
     padding: 64px 0 98px 0;
 }
 
+.preview__double {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}

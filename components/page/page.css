@@ -1,9 +1,10 @@
 .page {
     color: var(--black);
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
 
-.page__main {
-    flex-grow: 1;
+.page_detail {
+    background: var(--grey-1);
+    height: 100%;
 }
