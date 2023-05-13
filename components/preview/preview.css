@@ -14,10 +14,17 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 30px;
-    padding: 64px 0 98px 0;
+    padding: 64px 0 98px;
 }
 
 .preview__double {
     display: grid;
     grid-template-columns: auto 1fr;
+}
+
+@media (max-width: 1000px) {
+    .preview__cards {
+        gap: 16px;
+        padding: 22px 0 22px;
+    }
 }

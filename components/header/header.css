@@ -1,5 +1,5 @@
 .header {
-    padding: 24px 0 77px 0;
+    padding: 24px 0 77px;
 }
 
 .header__title {
@@ -8,12 +8,42 @@
     font-weight: 500;
     font-size: 50px;
     line-height: 64px;
-    margin: 0;
+    margin: 40px 0 0;
 }
 
 .header__logo {
-    margin-bottom: 40px;
+
 }
 
+.header__burger {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .header {
+        padding: 17px 0 77px;
+    }
+
+    .header__burger {
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: 16px;
+    }
+
+    .header__logo {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .header__title {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 38px;
+        color: var(--grey-4);
+    }
+}
 
 
