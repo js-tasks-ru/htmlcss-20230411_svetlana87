@@ -6,6 +6,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
+    color: var(--black);
     display: flex;
     flex-flow: column;
     gap: .5em;
@@ -23,16 +24,30 @@
 }
 
 .accordion__summary {
-    display: inline-block;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
     cursor: pointer;
 }
 
-/* не работает в Chrome, свойство 'display: inline-block;' убирает стрелку по умолчанию */
-/*.accordion__summary::-webkit-details-marker {*/
-/*    display: none;*/
-/*}*/
+.accordion__summary::-webkit-details-marker {
+    display: none;
+}
+
+.accordion__title {
+    margin: 0;
+}
 
 .accordion__details {
     margin: 0;
     padding-top: 1em;
+}
+
+.accordion__arrow {
+    width: 24px;
+    height: 24px;
+}
+
+.accordion__section[open] .accordion__arrow {
+    transform: rotate(180deg);
 }
