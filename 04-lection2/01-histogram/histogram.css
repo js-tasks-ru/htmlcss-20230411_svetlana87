@@ -10,7 +10,7 @@
     border-radius: 8px;
     padding: 1em 1.5em 1.5em 1.5em;
 
-    --histogram-blue: #4263EB;
+    --histogram-blue: var(--blue-3);
     --histogram-purple: #7048E8;
 }
 

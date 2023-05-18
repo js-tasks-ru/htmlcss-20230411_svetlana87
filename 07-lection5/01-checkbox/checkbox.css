@@ -1,6 +1,6 @@
 .checkbox {
     /* todo */
-    --checkbox-color: #4263EB;
+    --checkbox-color: var(--blue-3);
     display: inline-flex;
     position: relative;
 }
