@@ -1,0 +1,93 @@
+.toggle {
+    /* todo */
+    --toggle-color: #4263EB;
+    display: inline-flex;
+    position: relative;
+}
+
+.toggle__input {
+    position: absolute;
+    clip: rect(0,0,0,0);
+}
+
+.toggle__state {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.toggle__control {
+    box-sizing: border-box;
+    width: 52px;
+    height: 28px;
+    background: var(--white);
+    border: 1px solid var(--grey-2);
+    border-radius: 14px;
+}
+
+.toggle__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--grey-4);
+    /* prevent-select text */
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+.toggle__input:not(:checked) ~ .toggle__state .toggle__control:after {
+    content: "";
+    position: absolute;
+    border: 12px solid var(--grey-2);
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+}
+
+.toggle__input:checked ~ .toggle__state .toggle__control {
+    background-color: var(--toggle-color);
+    border-color: var(--toggle-color);
+}
+
+.toggle__input:checked ~ .toggle__state .toggle__control:after {
+    content: "";
+    position: absolute;
+    border: 12px solid var(--white);
+    border-radius: 50%;
+    top: 2px;
+    left: 26px;
+}
+
+.toggle__input:disabled ~ .toggle__state {
+    cursor: auto;
+}
+
+.toggle__input:disabled ~ .toggle__state .toggle__control {
+    background-color: var(--grey-2);
+    border-color: var(--grey-2);
+}
+
+.toggle__input:disabled ~ .toggle__state .toggle__control:after {
+    content: "";
+    position: absolute;
+    border: 12px solid var(--grey-3);
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+}
+
+.toggle__input:disabled ~ .toggle__state .toggle__title {
+    color: var(--grey-2);
+}
+
+.toggle__input:focus ~ .toggle__state .toggle__title {
+    text-decoration: underline;
+}
+
