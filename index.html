@@ -13,51 +13,72 @@
             <header class="header">
                 <div class="container">
                     <svg class="header__burger"
-                            width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M3 12H21" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M3 6H21" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M3 18H21" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                         width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 12H21" stroke="#495057" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                        <path d="M3 6H21" stroke="#495057" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                        <path d="M3 18H21" stroke="#495057" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round"/>
                     </svg>
                     <img class="header__logo" src="assets/images/logo.png" alt="Logo">
                     <h1 class="header__title">Reusable component library</h1>
                 </div>
             </header>
-            <main class="preview">
-                <div class="container">
-                    <div class="preview__cards">
-                        <div class="card">
-                            <div class="card__body"></div>
-                            <h4 class="card__title">Tooltip</h4>
-                            <div class="card__type">Container</div>
-                        </div>
-                        <div class="card">
-                            <div class="card__body"></div>
-                            <h4 class="card__title">Custom form elements</h4>
-                            <div class="card__type">Element</div>
-                        </div>
-                        <div class="card">
-                            <div class="card__body"></div>
-                            <h4 class="card__title">Calendar</h4>
-                            <div class="card__type">Container</div>
-                        </div>
-                        <div class="card">
-                            <div class="card__body"></div>
-                            <h4 class="card__title">Modal dialog</h4>
-                            <div class="card__type">Container</div>
-                        </div>
-                        <div class="card">
-                            <div class="card__body"></div>
-                            <h4 class="card__title">Histogram</h4>
-                            <div class="card__type">Element</div>
-                        </div>
-                        <div class="card">
-                            <div class="card__body"></div>
-                            <h4 class="card__title">Avatar</h4>
-                            <div class="card__type">Element</div>
+            <div class="tabs">
+                <input class="tabs__input" type="radio" id="tab-all" name="tab" checked>
+                <input class="tabs__input" type="radio" id="tab-elements" name="tab">
+                <input class="tabs__input" type="radio" id="tab-container" name="tab">
+                <input class="tabs__input" type="radio" id="tab-templates" name="tab">
+                <div class="tabs__scroller">
+                    <div class="container">
+                        <div class="tabs__list">
+                            <label class="tabs__label" for="tab-all">All components</label>
+                            <label class="tabs__label" for="tab-elements">Elements</label>
+                            <label class="tabs__label" for="tab-container">Containers</label>
+                            <label class="tabs__label" for="tab-templates">Templates</label>
                         </div>
                     </div>
                 </div>
-            </main>
+                <div class="tabs__content">
+                    <main class="preview">
+                        <div class="container">
+                            <div class="preview__cards">
+                                <div class="card tabs__card_all tabs__card_container">
+                                    <div class="card__body"></div>
+                                    <h4 class="card__title">Tooltip</h4>
+                                    <div class="card__type">Container</div>
+                                </div>
+                                <div class="card tabs__card_all tabs__card_elements">
+                                    <div class="card__body"></div>
+                                    <h4 class="card__title">Custom form elements</h4>
+                                    <div class="card__type">Element</div>
+                                </div>
+                                <div class="card tabs__card_all tabs__card_container">
+                                    <div class="card__body"></div>
+                                    <h4 class="card__title">Calendar</h4>
+                                    <div class="card__type">Container</div>
+                                </div>
+                                <div class="card tabs__card_all tabs__card_container">
+                                    <div class="card__body"></div>
+                                    <h4 class="card__title">Modal dialog</h4>
+                                    <div class="card__type">Container</div>
+                                </div>
+                                <div class="card tabs__card_all tabs__card_elements">
+                                    <div class="card__body"></div>
+                                    <h4 class="card__title">Histogram</h4>
+                                    <div class="card__type">Element</div>
+                                </div>
+                                <div class="card tabs__card_all tabs__card_elements">
+                                    <div class="card__body"></div>
+                                    <h4 class="card__title">Avatar</h4>
+                                    <div class="card__type">Element</div>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+            </div>
             <footer class="footer">
                 <div class="container">
                     <h2 class="footer__title">About</h2>

@@ -1,0 +1,56 @@
+.tabs {
+}
+
+.tabs__content {
+    min-height: 300px;
+    background: var(--grey-1);
+    border-top: 1px solid var(--grey-2);
+    border-bottom: 1px solid var(--grey-2);
+}
+
+.tabs__input {
+    position: absolute;
+    clip: rect(0,0,0,0);
+}
+
+.tabs__scroller {
+}
+
+.tabs__list {
+    display: flex;
+    gap: 40px;
+}
+
+.tabs__label {
+    padding-bottom: 8px;
+    border-bottom: 5px solid transparent;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    white-space: nowrap;
+    color: var(--grey-3);
+    cursor: pointer;
+}
+
+#tab-all:checked ~ .tabs__scroller .tabs__label[for="tab-all"],
+#tab-elements:checked ~ .tabs__scroller .tabs__label[for="tab-elements"],
+#tab-container:checked ~ .tabs__scroller .tabs__label[for="tab-container"],
+#tab-templates:checked ~ .tabs__scroller .tabs__label[for="tab-templates"]
+{
+    color: var(--black);
+    border-bottom-color: var(--black);
+}
+
+.tabs__card_all {
+    display: none;
+}
+
+#tab-all:checked ~ .tabs__content .tabs__card_all,
+#tab-elements:checked ~ .tabs__content .tabs__card_elements,
+#tab-container:checked ~ .tabs__content .tabs__card_container,
+#tab-templates:checked ~ .tabs__content .tabs__card_templates
+{
+    display: flex;
+}

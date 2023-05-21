@@ -8,6 +8,7 @@
 @import '../../components/container/container.css';
 @import '../../components/component/component.css';
 @import '../../components/menu/menu.css';
+@import '../../components/tabs/tabs.css';
 
 :root {
     --white: #ffffff;
