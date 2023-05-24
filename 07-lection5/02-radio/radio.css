@@ -46,13 +46,18 @@
     border: 2px solid var(--radio-color);
 }
 
-.radio__input:checked ~ .radio__state .radio__control:after {
+.radio__control:after {
+    display: none;
     content: "";
     position: absolute;
     border: 9px solid var(--radio-color);
     border-radius: 50%;
     top: 5px;
     left: 5px;
+}
+
+.radio__input:checked ~ .radio__state .radio__control:after {
+    display: block;
 }
 
 .radio__input:disabled ~ .radio__state {
