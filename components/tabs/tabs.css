@@ -34,10 +34,10 @@
     cursor: pointer;
 }
 
-#tab-all:checked ~ .tabs__scroller .tabs__label[for="tab-all"],
-#tab-elements:checked ~ .tabs__scroller .tabs__label[for="tab-elements"],
-#tab-container:checked ~ .tabs__scroller .tabs__label[for="tab-container"],
-#tab-templates:checked ~ .tabs__scroller .tabs__label[for="tab-templates"]
+.tabs__input_all:checked ~ .tabs__scroller .tabs__label_all,
+.tabs__input_elements:checked ~ .tabs__scroller .tabs__label_elements,
+.tabs__input_containers:checked ~ .tabs__scroller .tabs__label_containers,
+.tabs__input_templates:checked ~ .tabs__scroller .tabs__label_templates
 {
     color: var(--black);
     border-bottom-color: var(--black);
@@ -47,10 +47,10 @@
     display: none;
 }
 
-#tab-all:checked ~ .tabs__content .tabs__card_all,
-#tab-elements:checked ~ .tabs__content .tabs__card_elements,
-#tab-container:checked ~ .tabs__content .tabs__card_container,
-#tab-templates:checked ~ .tabs__content .tabs__card_templates
+.tabs__input_all:checked ~ .tabs__content .tabs__card_all,
+.tabs__input_elements:checked ~ .tabs__content .tabs__card_elements,
+.tabs__input_containers:checked ~ .tabs__content .tabs__card_container,
+.tabs__input_templates:checked ~ .tabs__content .tabs__card_templates
 {
     display: flex;
 }
