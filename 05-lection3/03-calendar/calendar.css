@@ -7,7 +7,7 @@
     /* todo move to main after PR */
     --calendar_title_color: #334D6E;
     --calendar_item_day: #90A0B7;
-    --calendar_item_active: #4263EB;
+    --calendar_item_active: var(--blue-3);
     --calendar_item_between_active: #A0B1F5;
 }
 
