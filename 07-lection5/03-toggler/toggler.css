@@ -42,27 +42,26 @@
     user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 }
 
-.toggle__input:not(:checked) ~ .toggle__state .toggle__control:after {
+.toggle__input ~ .toggle__state .toggle__control:after {
     content: "";
     position: absolute;
-    border: 12px solid var(--grey-2);
     border-radius: 50%;
     top: 2px;
+}
+
+.toggle__input:not(:checked) ~ .toggle__state .toggle__control:after {
+    border: 12px solid var(--grey-2);
     left: 2px;
+}
+
+.toggle__input:checked ~ .toggle__state .toggle__control:after {
+    border: 12px solid var(--white);
+    left: 26px;
 }
 
 .toggle__input:checked ~ .toggle__state .toggle__control {
     background-color: var(--toggle-color);
     border-color: var(--toggle-color);
-}
-
-.toggle__input:checked ~ .toggle__state .toggle__control:after {
-    content: "";
-    position: absolute;
-    border: 12px solid var(--white);
-    border-radius: 50%;
-    top: 2px;
-    left: 26px;
 }
 
 .toggle__input:disabled ~ .toggle__state {
