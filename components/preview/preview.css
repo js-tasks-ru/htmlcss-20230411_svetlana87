@@ -1,8 +1,4 @@
 .preview {
-    min-height: 300px;
-    background: var(--grey-1);
-    border-top: 1px solid var(--grey-2);
-    border-bottom: 1px solid var(--grey-2);
 }
 
 .preview_detail {
