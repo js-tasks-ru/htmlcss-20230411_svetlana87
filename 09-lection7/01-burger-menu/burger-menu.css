@@ -1,0 +1,29 @@
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    /* todo to main colors */
+    background-color: #F9FAFC;
+    transform: translateX(-100vw);
+    transition: transform .25s linear;
+    z-index: 1;
+}
+
+.mobile-menu[data-open] {
+    transform: translateX(0);
+}
+
+.mobile-menu_view {
+    display: block;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    right: 16px;
+}
+
+.mobile-menu_active {
+    background-color: var(--grey-2);
+}
+
