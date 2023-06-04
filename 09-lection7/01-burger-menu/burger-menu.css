@@ -15,7 +15,7 @@
     transform: translateX(0);
 }
 
-.mobile-menu_view {
+.mobile-menu__content {
     display: block;
     position: absolute;
     top: 16px;
@@ -23,7 +23,7 @@
     right: 16px;
 }
 
-.mobile-menu_active {
+.mobile-menu__button {
     background-color: var(--grey-2);
 }
 
