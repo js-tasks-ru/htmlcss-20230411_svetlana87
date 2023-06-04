@@ -1,8 +1,6 @@
 /* Стилизация кнопки */
 
 .button {
-    position: relative;
-    top: 0;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -16,7 +14,7 @@
     cursor: pointer;
     color: var(--text-color, black);
     background: var(--background-color, white);
-    transition: opacity 200ms ease-in-out, background 200ms ease-in-out, top 200ms;
+    transition: opacity 200ms ease-in-out, background 200ms ease-in-out, transform 200ms;
 }
 
 .button:disabled {
@@ -25,7 +23,7 @@
 }
 
 .button:active {
-    top: 2px;
+    transform: translateY(2px);
 }
 
 .button_primary {
