@@ -23,6 +23,7 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 26px;
+    transition: border-color .5s ease;
 }
 
 .input__in::placeholder {
