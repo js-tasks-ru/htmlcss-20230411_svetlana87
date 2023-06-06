@@ -24,6 +24,7 @@
     background: var(--white);
     border: 1px solid var(--grey-2);
     border-radius: 14px;
+    transition: all .5s ease;
 }
 
 .toggle__title {
@@ -42,11 +43,12 @@
     user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 }
 
-.toggle__input ~ .toggle__state .toggle__control:after {
+.toggle__control:after {
     content: "";
     position: absolute;
     border-radius: 50%;
     top: 2px;
+    transition: all .5s ease;
 }
 
 .toggle__input:not(:checked) ~ .toggle__state .toggle__control:after {
