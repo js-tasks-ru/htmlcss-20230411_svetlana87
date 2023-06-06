@@ -6,7 +6,50 @@
         <link rel="stylesheet" href="./burger-menu.css">
         <script defer src="./burger-menu.js"></script>
     </head>
-    <body>
-
+    <body style="height: auto;">
+        <header class="header">
+            <button class="header__btn" id="burger-menu-open">
+                <svg class="header__icon">
+                    <use href="../../assets/images/icons.svg#burger"></use>
+                </svg>
+            </button>
+            <div class="mobile-menu" id="burger-menu">
+                <div class="menu mobile-menu__content">
+                    <div class="menu__header">
+                        <button class="header__btn mobile-menu__button" id="burger-menu-close">
+                            <svg class="header__icon">
+                                <use href="../../assets/images/icons.svg#cross"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="menu__line"></div>
+                    <div class="menu__mode">
+                        <div class="menu__mode-title">Dark mode</div>
+                        <label class="toggle">
+                            <input type="checkbox" class="toggle__input">
+                            <div class="toggle__state">
+                                <div class="toggle__control"></div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="menu__line"></div>
+                    <div class="menu__list">
+                        <div class="menu__topic">Elements</div>
+                        <div class="menu__point">Avatar</div>
+                        <div class="menu__point">Custom form elements</div>
+                        <div class="menu__point">Button</div>
+                        <div class="menu__point">Avatar</div>
+                    </div>
+                    <div class="menu__line"></div>
+                    <div class="menu__list">
+                        <div class="menu__topic">Containers</div>
+                        <div class="menu__point">Avatar</div>
+                        <div class="menu__point">Custom form elements</div>
+                        <div class="menu__point">Button</div>
+                        <div class="menu__point">Avatar</div>
+                    </div>
+                </div>
+            </div>
+        </header>
     </body>
 </html>

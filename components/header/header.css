@@ -19,9 +19,31 @@
     display: none;
 }
 
+.header__btn {
+    display: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    padding: 0;
+    border: none;
+    background-color: var(--white);
+}
+
+.header__icon {
+    fill: var(--black);
+    height: 24px;
+    width: 24px;
+    vertical-align: middle;
+}
+
+
 @media (max-width: 1000px) {
     .header {
         padding: 17px 0 77px;
+    }
+
+    .header__btn {
+        display: block;
     }
 
     .header__burger {
